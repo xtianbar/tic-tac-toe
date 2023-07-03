@@ -33,7 +33,7 @@ const Start = (props: Props) => {
         </div>
         <div>
           <label htmlFor="player2">Player 2</label>
-          <input placeholder="Enter 1st Player Name"
+          <input placeholder="Enter 2nd Player Name"
             type="text"
             value={players[1]}
             onInput={(e) => handleInput(e, 1)}
