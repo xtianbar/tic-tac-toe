@@ -1,13 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Neucha', cursive;
+  @apply mt-24;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.squares {
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 255px 15px 225px / 15px 225px 15px 255px;
+  border: 2px solid rgb(65, 64, 62);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+input {
+  background: transparent;
+border: 2px solid #41403e;
+border-bottom-left-radius: 15px 255px;
+border-bottom-right-radius: 225px 15px;
+border-top-left-radius: 255px 15px;
+border-top-right-radius: 15px 225px;
+color: #41403e;
+display: block;
+font-size: 1rem;
+outline: none;
+padding: .5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  -moz-box-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+button {
+  border-bottom-left-radius: 15px 255px;
+border-bottom-right-radius: 225px 15px;
+border-top-left-radius: 255px 15px;
+border-top-right-radius: 15px 225px;
+transition: all 235ms ease 0s;
+box-shadow: 15px 28px 25px -18px rgba(0,0,0,.2);
+transition: all 235ms ease-in-out 0s;
+align-self: center;
+background: transparent;
+border: 2px solid #41403e;
+color: #41403e;
+cursor: pointer;
+display: inline-block;
+font-size: 1rem;
+outline: none;
+padding: .75rem;
 }
